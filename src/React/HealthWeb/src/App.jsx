@@ -3,17 +3,20 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './pages/Navbar';
 import Home from './pages/Home';
 import Schedule from './pages/Schedules';
+import Topbar from './pages/Topbar';
 
 const App = () => {
   return (
     <Router>
       <div>
-        <Navbar />
+        <Navbar/>
+        <Topbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
         </Routes>
       </div>
+      
     </Router>
   );
 }

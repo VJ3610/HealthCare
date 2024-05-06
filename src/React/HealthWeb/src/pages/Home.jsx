@@ -1,4 +1,3 @@
-import imag from "./images/AI-for-Health.jpg";
 import "./Home.css";
 const Home = () => {
     return (
@@ -11,8 +10,13 @@ const Home = () => {
                     <p>Here you can also get a detailed information about the prescribed
                         medicine.  </p><br />
                     <p>The most important thing is that your assistant reminds you with your medicine intake time as per your doctors prescription.</p><br />
+                <div>
+                    <button className="exploreBtn">Explore More </button>
+                </div>
                 </span>
-                <img className="ai" src="https://nlaic.com/wp-content/uploads/2021/06/AI-for-Health.jpg" alt="" />
+                <span>
+                    <img className="ai" src="https://nlaic.com/wp-content/uploads/2021/06/AI-for-Health.jpg" alt="" />
+                </span>
             </div>
         </div>
     );
