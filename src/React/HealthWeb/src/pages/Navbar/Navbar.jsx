@@ -18,7 +18,7 @@ const Navbar = () => {
         </li>
         <li>|</li>
         <li>
-            <a href="/med-detail">Medicinal Details</a>
+            <a href="/">Medicinal Details</a>
         </li>
       </ul>
       <div className="navbar-signup">

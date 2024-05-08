@@ -1,7 +1,7 @@
 
 .navbar {
     display: flex;
-    font-size:x-large;
+    font-size:2em;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -33,6 +33,7 @@
   .navbar-links li a:hover {
     text-decoration: underline;
     color: yellow;
+    font-weight: bold;
   }
   /* .navbar-links li a::before {
     text-decoration: none;

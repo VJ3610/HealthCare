@@ -3,7 +3,7 @@ const Home = () => {
     return (
         <div className="main">
 
-            <div className="img">
+            <div className="back">
                 <span className="intro">
                     <h1>An Easy Medicine Assistant</h1><br />
                     <p>This is a platform where you can get to know about your future appointments  with the doctor. </p><br />

@@ -1,9 +1,9 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './pages/Navbar';
-import Home from './pages/Home';
-import Schedule from './pages/Schedules';
-import Topbar from './pages/Topbar';
+import Navbar from './pages/Navbar/Navbar';
+import Home from './pages/Homepage/Home';
+import Schedule from './pages/Schedulepage/Schedules';
+import Topbar from './pages/Navbar/Topbar';
 
 const App = () => {
   return (
@@ -14,9 +14,9 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/schedule" element={<Schedule />} />
+          {/* <Route path="/Medi" element={<Medicals/>} /> */}
         </Routes>
       </div>
-      
     </Router>
   );
 }
