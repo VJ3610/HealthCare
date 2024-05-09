@@ -1,8 +1,9 @@
+// import { useState } from "react";
 import "./Home.css";
+// import SignInForm from "./SignInForm";
 const Home = () => {
     return (
         <div className="main">
-
             <div className="back">
                 <span className="intro">
                     <h1>An Easy Medicine Assistant</h1><br />

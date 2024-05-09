@@ -1,7 +1,12 @@
+import SignInForm from './SignInForm';
 import './Navbar.css';
+import { useState } from 'react';
+import "./SignInForm.css"
+import Signup from './Signup';
 // import logo from './medicare_logo.png'; 
 
 const Navbar = () => {
+  let [signup,setsignup]=useState(false);
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -14,7 +19,7 @@ const Navbar = () => {
         </li>
         <li>|</li>
         <li>
-          <a href="/schedule">Schedule </a>
+          <a href="/schedule/med-time">Schedule </a>
         </li>
         <li>|</li>
         <li>
@@ -22,9 +27,16 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="navbar-signup">
-        <button>Sign Up</button>
+        <button onClick={()=>setsignup(!signup)}>Sign Up</button>
       </div>
-    </nav>
+      <div className={`sign_up_back ${signup ? 'sign_show' : ''} ` }>
+          <div className={`Sign_page ${signup ? 'Sign_show' : ''} ` }>
+          <span className='sign' onClick={()=>setsignup(false)}>&times;</span>
+            {/* <SignInForm/> */}
+            <Signup/>
+          </div>
+      </div>
+      </nav> 
   );
 }
 

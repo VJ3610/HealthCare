@@ -10,12 +10,14 @@
     background-image:  linear-gradient(to right,#2d056d , #090231, #2b026d);
 }
 
-.schedule_nav p{
+.schedule_nav a{
+    color: #fff;
+    text-decoration: none;
     padding: 0 8px 0 20px;
     margin: 10px 25px;
 }
 
-.schedule_nav p:hover{
+.schedule_nav a:hover{
     color: #ffff00;
     text-decoration: underline;
     font-weight: bold;

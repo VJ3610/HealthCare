@@ -1,6 +1,7 @@
 import Details from "./Details";
-import { useState } from "react";
+// import { useState } from "react";
 import "./Schedules.css"
+// import Clock from "./clock";
 
 const Schedule = () => {
     // const [detailsCount, setDetailsCount] = useState(1); 
@@ -9,27 +10,18 @@ const Schedule = () => {
         <div className="main">
             <div className="top">
                 <div className="schedule_nav">
-                    <p>Medicine Timings</p>
+                    <a href="/schedule/med-time">Medicine Timings</a>
                     <div className="straight"></div>
-                    <p>Appointment Reminder</p>
+                    <a href="/schedule/appointment">Appointment Reminder</a>
                 </div>
-                {/* <span className="settings">
-                    <p>Voice Alert Settings</p>
-                </span> */}
             </div>
                 <Details/>
                 <br />
                 <Details/>
-                {/* <Details/>   */}
-        <button className="btn" onClick={()=>repeat()}>Add more  &gt;</button>
+                <br/>
+                <Details/>
     </div>        
     );
 }
         
 export default Schedule;
-        
-        {/* <div>
-            <input type="text" placeholder="Enter the Dr.Name"/>
-            <input type="text" placeholder="Enter the Medicine Name"/>
-            <input type="text" placeholder="Enter the Contact number of the Doctor"/>
-        </div> */}

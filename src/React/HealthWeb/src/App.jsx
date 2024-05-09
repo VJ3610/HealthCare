@@ -4,6 +4,8 @@ import Navbar from './pages/Navbar/Navbar';
 import Home from './pages/Homepage/Home';
 import Schedule from './pages/Schedulepage/Schedules';
 import Topbar from './pages/Navbar/Topbar';
+import Appointment from './pages/Schedulepage/Appointment';
+
 
 const App = () => {
   return (
@@ -13,8 +15,9 @@ const App = () => {
         <Topbar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/schedule/med-time" element={<Schedule />} />
           {/* <Route path="/Medi" element={<Medicals/>} /> */}
+          <Route path="/schedule/appointment" element={<Appointment />} />
         </Routes>
       </div>
     </Router>
