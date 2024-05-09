@@ -41,31 +41,61 @@
     margin-bottom: 100px;
     float: right;  
 }
-/* .sign_up_back{
-    width:100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    z-index: 5;
-    color: aliceblue;
-    left:1px;
-    bottom:1px;
-    display:none;
-}
-.Sign_page{
-    width:40%;
-    display: flex;
-    height: 70%;
-    transition:0.5s;
-    background-color: #fff;
-    color:#0a0137;
-    position: fixed;
-    left:50%;
-    top:-100%;
-    transform: translate(-50%);
-    margin-top: 5%;
+
+.explore{
+
+    background-image:  linear-gradient(to right, #0d0242, #2d0270);
+    margin: 30px;
+    border-radius: 40px;
+    color: white;
+    min-height: 1000px;
 }
 
-.sign_show{
-    display:block;
-    /* text-align: center; */
+.explore p{
+    font-size: 4em;
+    padding: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.step-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.step {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  font-size: 2em;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.desc {
+  width: 700px;
+  height: 200px;
+  background-color: #f8f9fa;
+  margin-left: 20px;
+}
+
+.step.desc {
+  font-size: 16px;
+  padding: 20px 20px;
+  background-image:  linear-gradient(to right, #3012c4, #451d86);
+  border-radius: 30px;
+
+}
+
+.step p{
+  margin:20px;
+}

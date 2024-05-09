@@ -19,7 +19,24 @@ const Home = () => {
                     <img className="ai" src="https://nlaic.com/wp-content/uploads/2021/06/AI-for-Health.jpg" alt="" />
                 </span>
             </div>
+        <div className="explore">
+        <p>To begin with following steps</p><br /> 
+        <div className="steps">
+            <div className="step-container">
+                <div className="step">Step-1 <br />Medicine Details</div>
+                <div className="step desc"></div>
+            </div>
+            <div className="step-container">
+                <div className="step">Step-2 <br />Schedules</div>
+                <div className="step desc"></div>
+            </div>
+            <div className="step-container">
+                <div className="step">Step-3 <br />voice customization</div>
+                <div className="step desc"></div>
+            </div>
         </div>
+    </div>
+    </div>
     );
 }
 

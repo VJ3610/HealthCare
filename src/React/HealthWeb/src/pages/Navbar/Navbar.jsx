@@ -21,10 +21,6 @@ const Navbar = () => {
         <li>
           <a href="/schedule/med-time">Schedule </a>
         </li>
-        <li>|</li>
-        <li>
-            <a href="/">Medicinal Details</a>
-        </li>
       </ul>
       <div className="navbar-signup">
         <button onClick={()=>setsignup(!signup)}>Sign Up</button>

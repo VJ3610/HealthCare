@@ -12,6 +12,8 @@ const Signup = () => {
       <form onSubmit={handleSubmit} className="form">
         <input required className="input" type="name" name="name" id="name" placeholder="User Name" />
         <input required className="input" type="email" name="email" id="email" placeholder="E-mail" />
+        <input required className="input" type="phoneNumber" name="phonenumber" id="phonenumber" placeholder="Phone-Number (Care taker1)" />
+        <input required className="input" type="phoneNumber" name="phonenumber" id="phonenumber" placeholder="Phone-Number (Care taker2)" />
         <input required className="input" type="password" name="password" id="password" placeholder="Password" />
         <input className="login-button" type="submit" value="Sign Up" />
       </form>

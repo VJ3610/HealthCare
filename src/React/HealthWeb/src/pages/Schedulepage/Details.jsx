@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./Schedules.css"
 const Details=()=>{
+    let [open,close]=useState(false);
     return(
         <div>
         <div className="img">
@@ -15,8 +17,15 @@ const Details=()=>{
                 <h1>Medicine image</h1>
             </span>
         </div>
-        <button className="edit">Edit ^ </button>
-        </div>
+        <button className="edit" onClick={()=>close(!open)}>Edit ^ </button>
+
+        <div className={`sign_up_back ${ open? 'sign_show' : ''} ` }>
+          <div className={`Sign_page ${open ? 'Sign_show' : ''} ` }>
+          <span className='sign' onClick={()=>close(false)}>&times;</span>
+            {/* code here */}
+          </div>
+      </div>
+    </div>
 
     );
 }
